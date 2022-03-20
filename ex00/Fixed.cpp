@@ -6,7 +6,7 @@
 /*   By: ddiakova <ddiakova@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/18 23:17:58 by ddiakova          #+#    #+#             */
-/*   Updated: 2022/03/19 21:53:45 by ddiakova         ###   ########.fr       */
+/*   Updated: 2022/03/20 12:36:13 by ddiakova         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	Fixed::setRawBits(int const raw) {
 	this->_value = raw;
 }
 
-std::ostream &operator << (std::ostream & o, Fixed const & rhs) {
+std::ostream & operator << (std::ostream & o, Fixed const & rhs) {
 	
 	o << "The value of _value is : " << rhs.getRawBits();
 	return o;
